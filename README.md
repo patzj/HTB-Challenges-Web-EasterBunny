@@ -10,6 +10,8 @@ It's that time of the year again! Write a letter to the Easter bunny and make yo
 
 Checking out the app reveals two main functionalities: saving and viewing letters to the Easter Bunny. There is one letter that is hidden, so I assume this is where the flag is located.
 
+![Screen Shot 2023-12-24 at 14 29 28](https://github.com/patzj/HTB-Challenges-Web-EasterBunny/assets/10325457/0639046a-074e-4228-b324-235a466489de)
+
 Upon inspecting the code, we can observe that sending a letter is accomplished through an AJAX request using `fetch`, as defined in `main.js`. Internally, after successfully saving the letter to the database, it will be loaded in the background via puppeteer. The purpose of this step is unclear, but the hidden message can be viewed through this process.
 
 ```js
